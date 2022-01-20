@@ -1,0 +1,249 @@
+.controller.custom{
+    background-image: url(base.svg);
+    height: 692px;
+    width: 758px;
+}
+
+.custom.disconnected {
+    background-image: url(disconnected.svg);
+}
+
+.custom.disconnected div {
+    display: none;
+}
+
+.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+    width: 556px;
+    height: 119px;
+    position: absolute;
+    left: 101px;
+}
+
+.custom .trigger {
+    width:118px;
+    height:119px;
+    background: url(trigger.svg);
+    opacity: 1;
+}
+
+.custom .trigger[data-value="0"] {
+    opacity: 0;
+}
+
+.custom .trigger.left {
+    float: left;
+    background-position: 0 0;
+}
+
+.custom .trigger.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.custom .bumpers {
+    width: 542px;
+    height: 53px;
+    left: 108px;
+    position: absolute;
+	top: 111px;
+}
+
+.custom .bumper {
+    width: 124px;
+    height: 53px;
+    background: url(bumper.svg);
+    opacity: 0;
+}
+
+.custom .bumper.pressed {
+    opacity: 1;
+}
+
+.custom .bumper.left {
+    float: left;
+}
+
+.custom .bumper.right {
+    float: right;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.custom .p0 {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.custom .p1 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.custom .p2 {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.custom .p3 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.custom .arrows {
+    position: absolute;
+    width: 216px;
+    height: 36px;
+    top: 437px;
+    left: 276px;
+}
+
+.custom .back {
+    background: url(start-select.svg);
+    width: 77px;
+    height: 36px;
+    opacity: 0;
+}
+.custom .start {
+    background: url(start-select.svg);
+    width: 62px;
+    height: 36px;
+    opacity: 0;
+}
+.custom .back.pressed, .start.pressed {
+    opacity: 1;
+}
+
+.custom .back {
+    float: left;
+	margin-right: -5px;
+}
+
+.custom .start {
+    background-position: -77px 0px;
+    float: left;
+}
+
+.custom .abxy {
+    position: absolute;
+    width: 130px;
+    height: 150px;
+	top: 181px;
+    left: 516px;
+}
+
+.custom .button {
+    position: absolute;
+    background: url(buttons.svg);
+    width: 50px;
+    height: 50px;
+    /* display: none; */
+}
+
+.custom .button.pressed {
+    background-position-y: -50px;
+    opacity: 1;
+}
+
+.custom .a {
+    background-position: 0 0;
+    top: 100px;
+    left: 50px;
+}
+
+.custom .b {
+    background-position: -50px 0;
+    top: 50px;
+    right: -20px;
+}
+
+.custom .x {
+    background-position: -100px 0;
+    top: 50px;
+    left: 0px;
+}
+
+.custom .y {
+    background-position: -150px 0;
+    top: 0px;
+    left: 50px;
+}
+
+.custom .sticks {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 331px;
+    left: 221px;
+}
+
+.custom .stick {
+    position: absolute;
+    background: url(stick.svg);
+    background-position: 0px 0;
+    height: 84px;
+    width: 84px;
+}
+
+.custom .stick.pressed {
+    background-position: -84px 0px;
+}
+
+.custom .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.custom .stick.right {
+    top: 0px;
+    left: 232px;
+}
+
+.custom .dpad {
+    position: absolute;
+    width: 114px;
+    height: 113px;
+    top: 199px;
+    left: 114px;
+}
+
+.custom .face {
+    background: url(dpad.svg);
+    position: absolute;
+    opacity: 0;
+}
+
+.custom .face.pressed {
+    opacity: 1;
+}
+
+.custom .face.up {
+    background-position: 0px 0px;
+    left: 35px;
+    top: 0px;
+    width: 44px;
+    height: 57px;
+}
+
+.custom .face.down {
+    background-position: -44px 0px;
+	left: 35px;
+    bottom: 0;
+    width: 44px;
+    height: 57px;
+}
+
+.custom .face.left {
+    background-position: -88px 0px;
+    width: 56px;
+    height: 55px;
+    top: 22px;
+    left: 0;
+}
+
+.custom .face.right {
+    background-position: -146px 0px;
+    width: 56px;
+    height: 55px;
+    top: 22px;
+    right: 0;
+}
